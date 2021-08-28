@@ -17,11 +17,11 @@ export const Content = styled.div`
     margin-top: ${theme.spacings.md};
 
     ${media.greaterThan('small')`
-      grid-template-columns: repeat(2, 1fr)
+      grid-template-columns: repeat(2, 1fr);
     `}
 
     ${media.greaterThan('medium')`
-      grid-template-columns: repeat(4, 1fr)
+      grid-template-columns: repeat(4, 1fr);
     `}
   `}
 `
