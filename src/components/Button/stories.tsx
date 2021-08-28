@@ -25,5 +25,15 @@ export const withIcon: Story<ButtonProps> = (args) => <Button {...args} />
 
 withIcon.args = {
   children: 'Buy Now',
+  size: 'sm',
   icon: <AddShoppingCart />
+}
+
+export const asLink: Story<ButtonProps> = (args) => <Button {...args} />
+
+asLink.args = {
+  children: 'Buy Now',
+  size: 'lg',
+  as: 'a',
+  href: '/link'
 }
