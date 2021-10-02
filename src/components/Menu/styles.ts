@@ -5,8 +5,8 @@ export const Wrapper = styled.menu`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
-    position: relative;
     padding: ${theme.spacings.sm} 0;
+    position: relative;
   `}
 `
 
@@ -20,19 +20,19 @@ export const LogoWrapper = styled.div`
 
 export const IconWrapper = styled.div`
   ${({ theme }) => css`
-    width: 2.4rem;
-    height: 2.4rem;
     color: ${theme.colors.white};
     cursor: pointer;
+    width: 2.4rem;
+    height: 2.4rem;
   `}
 `
+
 export const MenuGroup = styled.div`
   ${({ theme }) => css`
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
     flex-grow: 1;
-
+    justify-content: flex-end;
+    align-items: center;
     > div {
       margin-left: ${theme.spacings.xs};
     }
@@ -40,10 +40,10 @@ export const MenuGroup = styled.div`
 `
 
 export const MenuNav = styled.div`
-  ${media.greaterThan('medium')`
-    ${({ theme }) => css`
-      margin-left: ${theme.spacings.sm};
-    `}
+  ${({ theme }) => css`
+    ${media.greaterThan('medium')`
+			margin-left: ${theme.spacings.sm};
+		`}
   `}
 `
 
@@ -51,11 +51,10 @@ export const MenuLink = styled.a`
   ${({ theme }) => css`
     position: relative;
     color: ${theme.colors.white};
-    margin: 0.3rem ${theme.spacings.sm} 0;
     font-size: ${theme.font.sizes.md};
-    text-align: center;
+    margin: 0.3rem ${theme.spacings.sm} 0;
     text-decoration: none;
-
+    text-align: center;
     &:hover {
       &::after {
         content: '';
@@ -65,7 +64,6 @@ export const MenuLink = styled.a`
         background-color: ${theme.colors.primary};
         animation: hoverAnimation 0.2s forwards;
       }
-
       @keyframes hoverAnimation {
         from {
           width: 0;
@@ -89,19 +87,18 @@ export const MenuFull = styled.nav<MenuFullProps>`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: absolute;
+    background: ${theme.colors.white};
+    position: fixed;
+    z-index: ${theme.layers.menu};
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     height: 100vh;
     overflow: hidden;
-    background: ${theme.colors.white};
-
+    transition: opacity 0.3s ease-in-out;
     opacity: ${isOpen ? 1 : 0};
-    transition: opacity 250ms ease-in-out;
     pointer-events: ${isOpen ? 'all' : 'none'};
-
     > svg {
       position: absolute;
       top: 0;
@@ -111,7 +108,6 @@ export const MenuFull = styled.nav<MenuFullProps>`
       width: 2.4rem;
       height: 2.4rem;
     }
-
     ${MenuNav} {
       display: flex;
       align-items: center;
@@ -119,20 +115,17 @@ export const MenuFull = styled.nav<MenuFullProps>`
       flex: 1;
       flex-direction: column;
     }
-
     ${MenuLink} {
-      margin-bottom: ${theme.spacings.sm};
       color: ${theme.colors.black};
       font-weight: ${theme.font.bold};
       font-size: ${theme.font.sizes.xl};
-
+      margin-bottom: ${theme.spacings.sm};
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
-      transition: 250ms ease-in-out;
+      transition: transform 0.3s ease-in-out;
     }
-
     ${RegisterBox} {
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
-      transition: 250ms ease-in-out;
+      transition: transform 0.3s ease-in-out;
     }
   `}
 `
@@ -143,10 +136,9 @@ export const RegisterBox = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 0 ${theme.spacings.xl} ${theme.spacings.xl};
-
     > span {
       display: block;
-      margin: ${theme.spacings.sm} 0;
+      margin: ${theme.spacings['2xs']} 0;
       font-size: ${theme.font.sizes.xs};
     }
   `}
