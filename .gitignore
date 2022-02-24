@@ -35,3 +35,9 @@ public/workbox-*.js
 
 # storybook
 storybook-static
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
