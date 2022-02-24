@@ -3324,10 +3324,10 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
 
-"@types/styled-components@^5.1.15":
-  version "5.1.15"
-  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-5.1.15.tgz#30855b40aa80b3b4e4c0e43a4af366e7c246d148"
-  integrity sha512-4evch8BRI3AKgb0GAZ/sn+mSeB+Dq7meYtMi7J/0Mg98Dt1+r8fySOek7Sjw1W+Wskyjc93565o5xWAT/FdY0Q==
+"@types/styled-components@^5.1.23":
+  version "5.1.23"
+  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-5.1.23.tgz#11e5740047f292b42a042c60c0ef16b58d5adef6"
+  integrity sha512-zt8oQGU6XB4LH1Xpq169YnAVmt22+swzHJvyKMyTZu/z8+afvgKjjg0s79aAodgNSf36ZOEG6DyVAW/JhLH2Nw==
   dependencies:
     "@types/hoist-non-react-statics" "*"
     "@types/react" "*"
@@ -8867,10 +8867,10 @@ jest-snapshot@^27.3.1:
     pretty-format "^27.3.1"
     semver "^7.3.2"
 
-jest-styled-components@^7.0.6:
-  version "7.0.6"
-  resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-7.0.6.tgz#f30a39f778f50b2619636523abee6e4fd50d5654"
-  integrity sha512-asCitkJfaO1TX60nbIBXDUglblDFvKl9aKA5IV09AmO2zL6DC89MgrK73/e7zXzMOpzyVmuXQLLYlsDUSYIb7g==
+jest-styled-components@^7.0.8:
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-7.0.8.tgz#9ea3b43f002de060b4638fde3b422d14b3e3ec9f"
+  integrity sha512-0KE54d0yIzKcvtOv8eikyjG3rFRtKYUyQovaoha3nondtZzXYGB3bhsvYgEegU08Iry0ndWx2+g9f5ZzD4I+0Q==
   dependencies:
     css "^3.0.0"
 
